@@ -49,3 +49,22 @@ Example output summaries are in:
 - `results/prepare_summary_example.md`
 
 > Note: raw image data is not committed to this repository.
+
+## Final Cleaning (clinical + split-quality audit)
+
+A second-stage cleaning script is provided:
+
+```bash
+python scripts/final_clean_kromp.py --base /path/to/Kromp_Prepared_Data
+```
+
+It produces:
+- `prepared/final/master_final_clean.csv`
+- `prepared/final/clinical_final_clean.csv`
+- `reports/final_cleaning_summary.json`
+- `reports/final_cleaning_summary.md`
+
+The script includes:
+- AMH normalization for locale/date-like artifacts
+- split-quality checks (duplicates/unassigned)
+- multimodal-ready row flags
