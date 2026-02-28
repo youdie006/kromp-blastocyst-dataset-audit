@@ -95,120 +95,43 @@ A richer image-level analysis is provided in:
 - `results/rich_image_analysis/Rich_Image_Analysis_Report.md`
 - `results/rich_image_analysis/figures/*.png`
 
+## Visual Findings (Report-style)
 
-## Visual EDA Gallery
+Visual outputs are now documented in **report format** (figure + explanation + implication), not as a raw gallery.
 
-The gallery below is designed to make the repository **immediately interpretable** (not just file-heavy).
-All panels are random samples from the corresponding subset (seed-fixed).
+- Full report: [`results/rich_image_analysis/Visual_Insights_Report.md`](results/rich_image_analysis/Visual_Insights_Report.md)
 
-### A) Overall / split / outcome panels
+### Figure A — Split consistency (overview)
 
-| Random (n=16) | Train Silver (n=16) | Test Gold (n=16) |
+| Random | Train silver | Test gold |
 |---|---|---|
-| <img src="results/rich_image_analysis/figures/preview_random_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_train_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_test_16.jpg" width="300"/> |
+| <img src="results/rich_image_analysis/figures/preview_random_16.jpg" width="290"/> | <img src="results/rich_image_analysis/figures/preview_train_16.jpg" width="290"/> | <img src="results/rich_image_analysis/figures/preview_test_16.jpg" width="290"/> |
 
-| Clinical LB=1 (n=16) | Clinical LB=0 (n=16) |
+**Interpretation (short):**
+- Visual style appears broadly consistent across splits at a coarse level.
+- Reliability checks are still required for subtle shift and confidence misalignment.
+
+### Figure B — Outcome groups (LB=1 vs LB=0)
+
+| LB=1 | LB=0 |
 |---|---|
-| <img src="results/rich_image_analysis/figures/preview_lb1_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_lb0_16.jpg" width="300"/> |
+| <img src="results/rich_image_analysis/figures/preview_lb1_16.jpg" width="330"/> | <img src="results/rich_image_analysis/figures/preview_lb0_16.jpg" width="330"/> |
 
-### B) Expansion (silver label) representative panels
+**Interpretation (short):**
+- Both groups show high morphological heterogeneity.
+- Visual separation alone is not enough; calibrated probabilistic modeling is required.
 
-| EXP=0 | EXP=1 | EXP=2 |
+### Figure C — Morphology label panels (EXP / ICM / TE)
+
+| EXP example | ICM example | TE example |
 |---|---|---|
-| <img src="results/rich_image_analysis/figures/preview_exp0_16.jpg" width="260"/> | <img src="results/rich_image_analysis/figures/preview_exp1_16.jpg" width="260"/> | <img src="results/rich_image_analysis/figures/preview_exp2_16.jpg" width="260"/> |
+| <img src="results/rich_image_analysis/figures/preview_exp3_16.jpg" width="290"/> | <img src="results/rich_image_analysis/figures/preview_icm0_16.jpg" width="290"/> | <img src="results/rich_image_analysis/figures/preview_te0_16.jpg" width="290"/> |
 
-| EXP=3 | EXP=4 |
-|---|---|
-| <img src="results/rich_image_analysis/figures/preview_exp3_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_exp4_16.jpg" width="300"/> |
+**Interpretation (short):**
+- Label-frequency imbalance and rare bins are visible in the full report.
+- This supports reliability-aware evaluation (stratified metrics, CI, selective prediction).
 
-### C) ICM representative panels
-
-| ICM=0 | ICM=1 | ICM=2 | ICM=3 |
-|---|---|---|---|
-| <img src="results/rich_image_analysis/figures/preview_icm0_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_icm1_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_icm2_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_icm3_16.jpg" width="220"/> |
-
-### D) TE representative panels
-
-| TE=0 | TE=1 | TE=2 | TE=3 |
-|---|---|---|---|
-| <img src="results/rich_image_analysis/figures/preview_te0_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_te1_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_te2_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_te3_16.jpg" width="220"/> |
-
-### E) Larger 64-image contact sheets
-
-- `results/rich_image_analysis/figures/sample_all_64_grid.png`
-- `results/rich_image_analysis/figures/sample_lb1_64_grid.png`
-- `results/rich_image_analysis/figures/sample_lb0_64_grid.png`
-
-### Notes
-- These panels are for exploratory visualization and reproducibility documentation.
-- They are **not** a clinical decision aid and should not be interpreted as medical guidance.
-
-## How to Read the Gallery (Practical Guide)
-1. **Split panels** (`train` vs `test`) show whether image appearance is visibly consistent across splits.
-2. **Outcome panels** (`LB=1` vs `LB=0`) are for qualitative comparison only; they are not proof of causal morphology differences.
-3. **EXP/ICM/TE panels** show class diversity and class scarcity at a glance (important for model reliability and calibration).
-
-## Descriptive Insights from Current Analysis
-
-### 1) Outcome imbalance is substantial
-- Clinical subset size: **754**
-- Live birth positive rate: **31.0%** (234/754)
-- Implication: AUROC alone is insufficient; report **AUPRC**, calibration, and class-aware metrics.
-
-### 2) Clinical data are mostly in train split
-- Clinical rows by split: **653 train / 100 test / 1 unassigned**
-- Implication: keep strict protocol and report uncertainty/CI because evaluation set for outcome is relatively small.
-
-### 3) Morphology class distribution is skewed
-(Clinical subset, silver labels)
-
-| Label family | Most frequent classes | Rare classes |
-|---|---|---|
-| EXP | EXP=3 (n=380) | EXP=0 (n=43), EXP=4 (n=63) |
-| ICM | ICM=0 (n=474) | ICM=2 (n=1) |
-| TE | TE=0 (n=414) | TE=2 (n=12) |
-
-- Implication: rare classes can destabilize ranking and calibration; use stratified reporting + confidence intervals.
-
-### 4) LB rate differs by morphology class, but small-n classes are fragile
-
-| Group | n | LB rate |
-|---|---:|---:|
-| EXP=4 | 63 | 39.7% |
-| EXP=3 | 380 | 32.9% |
-| EXP=2 | 111 | 26.1% |
-| EXP=1 | 56 | 25.0% |
-| EXP=0 | 43 | 34.9% |
-
-| Group | n | LB rate |
-|---|---:|---:|
-| ICM=0 | 474 | 32.5% |
-| ICM=1 | 79 | 31.6% |
-| ICM=3 | 99 | 29.3% |
-| ICM=2 | 1 | 0.0% *(not interpretable)* |
-
-| Group | n | LB rate |
-|---|---:|---:|
-| TE=0 | 414 | 33.6% |
-| TE=1 | 128 | 31.3% |
-| TE=3 | 99 | 29.3% |
-| TE=2 | 12 | 0.0% *(very small n)* |
-
-- Implication: observed trends should be treated as **descriptive**; avoid strong biological claims from low-support bins.
-
-### 5) Missingness in key clinical variables is non-trivial
-- Endometrium (`Endo`) missing: **20.7%**
-- AMH missing after normalization: **21.9%**
-- Implication: compare complete-case vs imputed/missing-indicator strategies and report sensitivity.
-
-### 6) Data quality flags remain important for reproducibility
-- One duplicate in train split source (`838_02.png`)
-- One unassigned image in master (`846_01.png`)
-- Implication: keep these checks in preprocessing and document inclusion/exclusion in thesis Methods.
-
-## Recommended Next Analysis Steps
-1. Add **patient-grouped bootstrap CI** for AUROC/AUPRC/ECE.
-2. Report **risk-coverage** and **selective prediction** under class imbalance.
-3. Add **per-class reliability tables** (especially for rare EXP/ICM/TE bins).
-4. Run sensitivity analysis for missing clinical variables (Endo/AMH).
+### Why this format matters
+- It ties each panel to a concrete research implication.
+- It prevents “image dump without meaning” and improves thesis-ready traceability.
 
