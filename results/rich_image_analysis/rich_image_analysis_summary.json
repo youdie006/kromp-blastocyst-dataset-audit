@@ -35,8 +35,8 @@
     "mean": 266242.62
   },
   "figure_list_files": {
-    "all_64": "/mnt/d/MyProject/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_all_64.txt",
-    "lb1_64": "/mnt/d/MyProject/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_lb1_64.txt",
-    "lb0_64": "/mnt/d/MyProject/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_lb0_64.txt"
+    "all_64": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_all_64.txt",
+    "lb1_64": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_lb1_64.txt",
+    "lb0_64": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_lb0_64.txt"
   }
 }
