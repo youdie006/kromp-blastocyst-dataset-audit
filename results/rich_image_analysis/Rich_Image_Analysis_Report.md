@@ -27,21 +27,9 @@
 - mean: 266242.62
 
 ## Generated figure list files
-- all: `/mnt/d/MyProject/infertility/02_Data/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_all_64.txt`
-- LB=1: `/mnt/d/MyProject/infertility/02_Data/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_lb1_64.txt`
-- LB=0: `/mnt/d/MyProject/infertility/02_Data/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_lb0_64.txt`
+- all: `/mnt/d/MyProject/infertility-code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_all_64.txt`
+- LB=1: `/mnt/d/MyProject/infertility-code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_lb1_64.txt`
+- LB=0: `/mnt/d/MyProject/infertility-code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/sample_lb0_64.txt`
 
 ## Notes
 - Contact-sheet figure PNGs are generated separately via ffmpeg from the list files.
-
-
-## Visual panels
-
-### Random sample (64 images)
-![Random 64](figures/sample_all_64_grid.png)
-
-### Clinical subset LB=1 (64-image sample)
-![LB1 64](figures/sample_lb1_64_grid.png)
-
-### Clinical subset LB=0 (64-image sample)
-![LB0 64](figures/sample_lb0_64_grid.png)

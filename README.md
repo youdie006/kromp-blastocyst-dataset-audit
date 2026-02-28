@@ -48,7 +48,7 @@ Example output summaries are in:
 - `results/prepare_summary_example.json`
 - `results/prepare_summary_example.md`
 
-> Note: raw image data is not committed to this repository.
+> Note: the original figshare ZIP is not committed. Public PNG images are included under `data/images/`.
 
 ## Final Cleaning (clinical + split-quality audit)
 
@@ -82,3 +82,18 @@ The image source is the public figshare artifact associated with the Kromp datas
 A richer image-level analysis is provided in:
 - `results/rich_image_analysis/Rich_Image_Analysis_Report.md`
 - `results/rich_image_analysis/figures/*.png`
+
+
+## Representative Image Preview (README)
+
+To make the repository visually informative at a glance, representative image panels are shown below.
+
+| Random sample (n=16) | Clinical subset LB=1 sample (n=16) | Clinical subset LB=0 sample (n=16) |
+|---|---|---|
+| <img src="results/rich_image_analysis/figures/preview_all_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_lb1_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_lb0_16.jpg" width="300"/> |
+
+Additional, larger contact sheets are available in:
+- `results/rich_image_analysis/figures/sample_all_64_grid.png`
+- `results/rich_image_analysis/figures/sample_lb1_64_grid.png`
+- `results/rich_image_analysis/figures/sample_lb0_64_grid.png`
+
