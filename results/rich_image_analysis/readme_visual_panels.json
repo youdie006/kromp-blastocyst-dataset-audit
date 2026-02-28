@@ -1,0 +1,110 @@
+{
+  "preview_random_16": {
+    "population": 2344,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_random_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_random_16.jpg"
+  },
+  "preview_train_16": {
+    "population": 2043,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_train_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_train_16.jpg"
+  },
+  "preview_test_16": {
+    "population": 300,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_test_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_test_16.jpg"
+  },
+  "preview_lb1_16": {
+    "population": 234,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_lb1_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_lb1_16.jpg"
+  },
+  "preview_lb0_16": {
+    "population": 520,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_lb0_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_lb0_16.jpg"
+  },
+  "preview_exp0_16": {
+    "population": 197,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_exp0_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_exp0_16.jpg"
+  },
+  "preview_exp1_16": {
+    "population": 194,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_exp1_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_exp1_16.jpg"
+  },
+  "preview_exp2_16": {
+    "population": 429,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_exp2_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_exp2_16.jpg"
+  },
+  "preview_exp3_16": {
+    "population": 1080,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_exp3_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_exp3_16.jpg"
+  },
+  "preview_exp4_16": {
+    "population": 143,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_exp4_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_exp4_16.jpg"
+  },
+  "preview_icm0_16": {
+    "population": 1304,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_icm0_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_icm0_16.jpg"
+  },
+  "preview_icm1_16": {
+    "population": 332,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_icm1_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_icm1_16.jpg"
+  },
+  "preview_icm2_16": {
+    "population": 16,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_icm2_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_icm2_16.jpg"
+  },
+  "preview_icm3_16": {
+    "population": 391,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_icm3_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_icm3_16.jpg"
+  },
+  "preview_te0_16": {
+    "population": 1080,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_te0_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_te0_16.jpg"
+  },
+  "preview_te1_16": {
+    "population": 525,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_te1_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_te1_16.jpg"
+  },
+  "preview_te2_16": {
+    "population": 47,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_te2_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_te2_16.jpg"
+  },
+  "preview_te3_16": {
+    "population": 391,
+    "sample_n": 16,
+    "list_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/lists/preview_te3_16.txt",
+    "image_file": "/mnt/d/MyProject/infertility/code/repos/kromp-blastocyst-dataset-audit/results/rich_image_analysis/figures/preview_te3_16.jpg"
+  }
+}

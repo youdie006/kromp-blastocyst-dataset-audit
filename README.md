@@ -18,6 +18,18 @@ This repository verifies key claims from:
 See full report:
 - [`results/Kromp_Dataset_Verification_Report.md`](results/Kromp_Dataset_Verification_Report.md)
 
+
+## Quantitative Snapshot (from cleaned master)
+
+| Metric | Value |
+|---|---:|
+| Total images | 2,344 |
+| Split (train_silver / test_gold / unassigned) | 2,043 / 300 / 1 |
+| Clinical rows | 754 |
+| Live birth labels (LB=1 / LB=0) | 234 / 520 |
+| Resolution | 512×384 (all images) |
+
+
 ## Reproducibility Script
 Run:
 
@@ -84,16 +96,50 @@ A richer image-level analysis is provided in:
 - `results/rich_image_analysis/figures/*.png`
 
 
-## Representative Image Preview (README)
+## Visual EDA Gallery (README)
 
-To make the repository visually informative at a glance, representative image panels are shown below.
+The gallery below is designed to make the repository **immediately interpretable** (not just file-heavy).
+All panels are random samples from the corresponding subset (seed-fixed).
 
-| Random sample (n=16) | Clinical subset LB=1 sample (n=16) | Clinical subset LB=0 sample (n=16) |
+### A) Overall / split / outcome panels
+
+| Random (n=16) | Train Silver (n=16) | Test Gold (n=16) |
 |---|---|---|
-| <img src="results/rich_image_analysis/figures/preview_all_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_lb1_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_lb0_16.jpg" width="300"/> |
+| <img src="results/rich_image_analysis/figures/preview_random_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_train_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_test_16.jpg" width="300"/> |
 
-Additional, larger contact sheets are available in:
+| Clinical LB=1 (n=16) | Clinical LB=0 (n=16) |
+|---|---|
+| <img src="results/rich_image_analysis/figures/preview_lb1_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_lb0_16.jpg" width="300"/> |
+
+### B) Expansion (silver label) representative panels
+
+| EXP=0 | EXP=1 | EXP=2 |
+|---|---|---|
+| <img src="results/rich_image_analysis/figures/preview_exp0_16.jpg" width="260"/> | <img src="results/rich_image_analysis/figures/preview_exp1_16.jpg" width="260"/> | <img src="results/rich_image_analysis/figures/preview_exp2_16.jpg" width="260"/> |
+
+| EXP=3 | EXP=4 |
+|---|---|
+| <img src="results/rich_image_analysis/figures/preview_exp3_16.jpg" width="300"/> | <img src="results/rich_image_analysis/figures/preview_exp4_16.jpg" width="300"/> |
+
+### C) ICM representative panels
+
+| ICM=0 | ICM=1 | ICM=2 | ICM=3 |
+|---|---|---|---|
+| <img src="results/rich_image_analysis/figures/preview_icm0_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_icm1_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_icm2_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_icm3_16.jpg" width="220"/> |
+
+### D) TE representative panels
+
+| TE=0 | TE=1 | TE=2 | TE=3 |
+|---|---|---|---|
+| <img src="results/rich_image_analysis/figures/preview_te0_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_te1_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_te2_16.jpg" width="220"/> | <img src="results/rich_image_analysis/figures/preview_te3_16.jpg" width="220"/> |
+
+### E) Larger 64-image contact sheets
+
 - `results/rich_image_analysis/figures/sample_all_64_grid.png`
 - `results/rich_image_analysis/figures/sample_lb1_64_grid.png`
 - `results/rich_image_analysis/figures/sample_lb0_64_grid.png`
+
+### Notes
+- These panels are for exploratory visualization and reproducibility documentation.
+- They are **not** a clinical decision aid and should not be interpreted as medical guidance.
 
