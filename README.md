@@ -96,7 +96,7 @@ A richer image-level analysis is provided in:
 - `results/rich_image_analysis/figures/*.png`
 
 
-## Visual EDA Gallery (README)
+## Visual EDA Gallery
 
 The gallery below is designed to make the repository **immediately interpretable** (not just file-heavy).
 All panels are random samples from the corresponding subset (seed-fixed).
