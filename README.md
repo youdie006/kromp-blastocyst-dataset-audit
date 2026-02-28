@@ -68,3 +68,17 @@ The script includes:
 - AMH normalization for locale/date-like artifacts
 - split-quality checks (duplicates/unassigned)
 - multimodal-ready row flags
+
+
+## Image Data Included in Repository
+
+This repository now includes the public image set under:
+
+- `data/images/` (2,344 PNG files)
+
+The image source is the public figshare artifact associated with the Kromp dataset DOI:
+- https://doi.org/10.6084/m9.figshare.20123153.v3
+
+A richer image-level analysis is provided in:
+- `results/rich_image_analysis/Rich_Image_Analysis_Report.md`
+- `results/rich_image_analysis/figures/*.png`
