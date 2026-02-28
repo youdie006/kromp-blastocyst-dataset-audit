@@ -1,0 +1,27 @@
+{
+  "paths": {
+    "zip": "/mnt/d/MyProject/infertility/02_Data/Kromp_Prepared_Data/raw/Blastocyst_Dataset.zip",
+    "extracted": "/mnt/d/MyProject/infertility/02_Data/Kromp_Prepared_Data/raw/extracted",
+    "manifests": "/mnt/d/MyProject/infertility/02_Data/Kromp_Prepared_Data/prepared/manifests"
+  },
+  "counts": {
+    "images_total": 2344,
+    "train_rows_raw": 2044,
+    "train_rows_resolved": 2044,
+    "train_rows_missing": 0,
+    "test_rows_raw": 300,
+    "test_rows_resolved": 300,
+    "test_rows_missing": 0,
+    "clinical_rows_raw": 754,
+    "clinical_rows_resolved": 754,
+    "clinical_rows_missing": 0,
+    "master_rows": 2344,
+    "clinical_overlap_train": 653,
+    "clinical_overlap_test": 100
+  },
+  "missing_examples": {
+    "train": [],
+    "test": [],
+    "clinical": []
+  }
+}

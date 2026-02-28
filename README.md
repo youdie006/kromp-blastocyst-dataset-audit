@@ -30,3 +30,22 @@ The script inspects:
 - row counts in Gardner split files
 - clinical file columns and row count
 - filename consistency between clinical rows and image files
+## Data Preparation (local build manifests)
+
+In addition to structural verification, this repo now includes a reproducible preparation script:
+
+```bash
+python scripts/prepare_kromp_dataset.py --zip /path/to/Blastocyst_Dataset.zip --out /path/to/output_dir
+```
+
+It creates manifest CSV files for:
+- Gardner silver-train split
+- Gardner gold-test split
+- Clinical subset
+- Unified master table (all images)
+
+Example output summaries are in:
+- `results/prepare_summary_example.json`
+- `results/prepare_summary_example.md`
+
+> Note: raw image data is not committed to this repository.
