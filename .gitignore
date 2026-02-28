@@ -1,0 +1,4 @@
+# local artifacts
+*.zip
+__pycache__/
+.DS_Store

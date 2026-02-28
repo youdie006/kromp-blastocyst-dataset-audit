@@ -1,0 +1,56 @@
+{
+  "zip_path": "/tmp/Blastocyst_Dataset.zip",
+  "counts": {
+    "images_png": 2344,
+    "gardner_train_silver_rows": 2044,
+    "gardner_test_gold_rows": 300,
+    "sum_train_plus_test": 2344,
+    "clinical_rows": 754
+  },
+  "headers": {
+    "gardner_train_silver": [
+      "Image",
+      "EXP_silver",
+      "ICM_silver",
+      "TE_silver"
+    ],
+    "gardner_test_gold_only": [
+      "Image",
+      "EXP_gold",
+      "ICM_gold",
+      "TE_gold",
+      ""
+    ],
+    "clinical": [
+      "Image",
+      "Fond",
+      "d",
+      "EXP_silver",
+      "ICM_silver",
+      "TE_silver",
+      "AMH",
+      "Age",
+      "Endo",
+      "COC",
+      "MII",
+      "SS",
+      "HA",
+      "LB"
+    ]
+  },
+  "clinical_checks": {
+    "required_columns_present": {
+      "Age": true,
+      "AMH": true,
+      "Endo": true,
+      "SS": true,
+      "HA": true,
+      "LB": true
+    },
+    "clinical_images_unique": 754,
+    "clinical_image_names_missing_in_image_folder": [
+      "187_1.png"
+    ],
+    "nonstandard_name_examples": []
+  }
+}
